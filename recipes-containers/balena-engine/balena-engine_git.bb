@@ -11,15 +11,19 @@ LIC_FILES_CHKSUM = "file://src/import/LICENSE;md5=4859e97a9c7780e77972d989f0823f
 
 inherit systemd go pkgconfig useradd
 
-BALENA_VERSION = "v20.10.27"
-BALENA_BRANCH = "release/v20.10"
-
-SRCREV = "f4c93ad2b3c4ffa190ad29abba0a6f3e0779c797"
+#BALENA_VERSION = "v20.10.27"
+#BALENA_BRANCH = "release/v20.10"
+#SRCREV = "f4c93ad2b3c4ffa190ad29abba0a6f3e0779c797"
 
 #BALENA_VERSION = "20.10.40"
 #BALENA_BRANCH= "master"
-
 #SRCREV = "7c55ded8bb99ebdf7e39e6a6026a1838ab05aa99"
+
+
+BALENA_VERSION = "20.10.43"
+BALENA_BRANCH= "master"
+SRCREV = "c10820dfb8202a0f65c24f3ef253f1dc2ea89a16"
+
 SRC_URI = " \
     git://github.com/balena-os/balena-engine.git;branch=${BALENA_BRANCH};destsuffix=git/src/import;protocol=https \
     file://balena-tmpfiles.conf \
